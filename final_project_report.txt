@@ -1,0 +1,48 @@
+
+CUSTOMER SEGMENTATION USING K-MEANS CLUSTERING
+================================================
+
+PROJECT OBJECTIVE
+To segment retail customers according to their
+purchasing behaviour using K-Means clustering.
+
+DATASET INFORMATION
+Original transaction records: 541909
+Cleaned transaction records: 397884
+Number of customers: 4338
+
+FEATURES USED
+1. Recency
+2. Frequency
+3. Monetary
+
+PREPROCESSING
+- Missing customer IDs removed.
+- Cancelled transactions excluded.
+- Invalid quantities and prices removed.
+- Customer-level RFM features created.
+- Log transformation applied.
+- StandardScaler used for normalization.
+
+CLUSTERING
+Algorithm: K-Means
+Number of clusters: 2
+Silhouette score: 0.4329
+
+PCA
+Explained variance:
+[0.75102042 0.18759201]
+
+CUSTOMER SEGMENT SUMMARY
+         Customer_Count  Average_Recency  Average_Frequency  Average_Monetary  Customer_Percentage
+Cluster                                                                                           
+0                  2671           134.14               1.67            497.74                61.57
+1                  1667            25.88               8.44           4548.26                38.43
+
+CONCLUSION
+The K-Means algorithm grouped customers according
+to their purchasing behaviour.
+
+The generated customer segments can help businesses
+identify valuable customers, understand purchasing
+patterns, and develop targeted marketing strategies.
